@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  font-family: 'Source Code Pro', monospace;
 }
 
 body, html {
@@ -8,22 +7,37 @@ body, html {
 }
 
 .bg { 
-    /* The image used */
-    background-image: url("./img/background.jpg");
+  /* The image used */
+  background-image: url("./img/background.jpg");
 
-    /* Full height */
-    height: 100%; 
+  /* Full height */
+  height: 100%; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bgtext {
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
   text-align: center;
-  height: 100vh;
-  line-height: 100vh;
+
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 70px;
