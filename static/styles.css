@@ -9,7 +9,7 @@ body, html {
 
 .bg { 
     /* The image used */
-    background-image: url("../img/background.jpg");
+    background-image: url("./img/background.jpg");
 
     /* Full height */
     height: 100%; 
@@ -22,8 +22,8 @@ body, html {
 
 .bgtext {
   text-align: center;
-  height: 100%;
-  padding: 25%;
+  height: 100vh;
+  line-height: 100vh;
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 70px;
