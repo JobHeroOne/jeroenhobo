@@ -4,9 +4,15 @@ from flask import render_template
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
 	return render_template("index.html")
+
+
+@app.route("/trips")
+def trips():
+	return render_template("trips.html")
 
 
 @app.route("/heartrate")
